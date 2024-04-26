@@ -1,0 +1,15 @@
+{
+  "name": "handletraffic",
+  "version": "1.0.0",
+  "description": "Lambda Code for handling web traffic analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dynamoose": "^4.0.1"
+  }
+}
