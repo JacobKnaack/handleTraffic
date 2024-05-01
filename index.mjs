@@ -3,6 +3,7 @@ import crypto from 'crypto';
 
 const Traffic = dynamoose.model('traffic', new dynamoose.Schema({
   id: String,
+  link_encoding: String,
   referrer: String,
   timestamp: String,
   request_method: String,
@@ -26,6 +27,7 @@ export const handler = async (event) => {
     request_method,
     ip_address,
     timestamp,
+    link_encoding,
   } = parseAttributes(event.Records[0].Sns.MessageAttributes);
   const user_agent = event.Records[0].Sns.Message;
   let responseBody = null;
@@ -38,7 +40,8 @@ export const handler = async (event) => {
       ip_address,
       timestamp,
       referrer,
-      user_agent
+      user_agent,
+      link_encoding
     });
     statusCode = 200;
     responseBody = record;

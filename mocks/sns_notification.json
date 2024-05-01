@@ -21,20 +21,24 @@
             "Value": "Test address"
           },
           "timestamp": {
-            "Type": "Binary",
+            "Type": "String",
             "Value": "Test timestamp"
           },
           "response_code": {
-            "Type": "Binary",
+            "Type": "String",
             "Value": "Test code"
           },
           "request_method": {
-            "Type": "Binary",
+            "Type": "String",
             "Value": "Test method"
           },
           "referrer": {
-            "Type": "Binary",
+            "Type": "String",
             "Value": "Test referrer"
+          },
+          "link_encoding": {
+            "Type": "String",
+            "Value": "Test Encoding"
           }
         }
       }
